@@ -1,0 +1,11 @@
+fun main() {
+    val pares = mutableListOf<Int>()
+
+    for (numero in 1..100) {
+        if (numero % 2 == 0) {
+            pares.add(numero)
+        }
+    }
+
+    println(pares)
+}
