@@ -1,0 +1,60 @@
+fun main() {
+    val numbers = arrayOf(1,2,3,4,5,6,7,8,9,10,11)
+    val numbersNull: Array<Int?> = arrayOfNulls(15)
+
+    for (i in numbers.indices) {
+        if (i == 5) {
+            numbersNull[i] = 5
+            println("nota: $i")
+            
+            
+            
+    for (i in numbers.indices) {
+        if (i == 5) {
+            numbersNull[i] = 5
+            println("nota: $i")
+            
+            
+            
+    for (i in numbers.indices) {
+        if (i == 7) {
+            numbersNull[i] = 7
+            println("nota: $i")
+            
+            
+            
+            
+    for (i in numbers.indices) {
+        if (i == 10) {
+            numbersNull[i] = 10
+            println("nota: $i")
+            
+            
+            
+    for (i in numbers.indices) {
+        if (i == 5) {
+            numbersNull[i] = 5
+            println("nota: $i")
+            
+            val notasValidas = numbersNull.filterNotNull()
+            if (notasValidas.isNotEmpty()) {
+            val promedio = notasValidas.average()
+            println("Promedio de las notas: $promedio")
+}           else {
+            println("No hay notas válidas para calcular el promedio.")
+}
+          
+                                     }
+                                  }
+
+                              }
+                           }
+            
+                       }
+                   }
+            
+              }
+           }
+        }
+    }
+}
