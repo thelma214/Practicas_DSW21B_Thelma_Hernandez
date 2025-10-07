@@ -1,0 +1,23 @@
+data class Producto(
+    val nombre: String,
+    val descripcion: String,
+    val precio: Double,
+    val cantidadDisponible: Int,
+    val estado: String,
+    val promocion: Boolean
+)
+
+fun main() {
+    val producto1 = Producto("Jugo", "1 litro", 2.50, 30, "Disponible", true)
+    val producto2 = Producto("Pan", "Integral", 1.75, 25, "Disponible", false)
+    val producto3 = Producto("Leche", "Entera", 1.20, 10, "Agotado", false)
+
+    val productos = listOf(producto1, producto2, producto3)
+
+    for (p in productos) {
+        println(p)
+    }
+
+    val precioPromedio = productos.map { it.precio }.average()
+    println("Precio promedio: $precioPromedio")
+}
